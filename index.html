@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+    <!-- ===== Navigation Bar ===== -->
+    <nav>
+  <div class="nav-container">
+    <img src="images/headshot.jpg" alt="Ali Hassan headshot" class="headshot-nav">
+    
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger Icon for Mobile -->
+    <div class="hamburger" onclick="openPanel()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Side Panel for Mobile Links -->
+  <div id="sidePanel" class="side-panel">
+    <span class="close-btn" onclick="closePanel()">&times;</span>
+    <a href="#about" onclick="closePanel()">About</a>
+    <a href="#projects" onclick="closePanel()">Projects</a>
+    <a href="#contact" onclick="closePanel()">Contact</a>
+  </div>
+</nav>
+
+
+    <main>
+        <!-- ===== About Section ===== -->
+        <section id="about" class="intro">
+            <div class="about-container">
+                <!-- About section headshot -->
+                <img src="images/headshot.jpg" alt="Ali Hassan headshot" class="headshot-about">
+                <div class="about-text">
+                    <h1>Hey I am Ali Hassan</h1>
+                    <h2>a web designer &amp; software developer</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Projects Section ===== -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <!-- Cafeteria Menu Project -->
+            <div class="project-card">
+              <a href="https://iuk-cafeteria-menu.vercel.app/" target="_blank">
+                <img src="images/cafeteria-thumbnail.png" alt="Cafeteria Menu Preview">
+              </a>
+                <h3>Cafeteria Digital Menu</h3>
+                <p>
+                    A responsive restaurant menu built with HTML & CSS.  
+                    It features categorized sections, a sticky navbar, and a warm color scheme.
+                </p>
+                <div class="project-links">
+                    <a href="https://iuk-cafeteria-menu.vercel.app/" target="_blank">🔗 Live Demo</a>
+                    <a href="https://restuarant-menu-demo.vercel.app/" target="_blank">🧩 Alternate Demo</a>
+                    <a href="https://github.com/abdinasirhassan360-web/IUK-Cafeteria-Menu" target="_blank">💻 Source Code</a>
+                </div>
+            </div>
+  <!-- Pricing Plans Project -->
+<div class="project-card">
+  <a href="https://bbm-notes-plans-prices.vercel.app/" target="_blank">
+    <img src="images/pricing-thumbnail.png" alt="Pricing Plans Preview">
+  </a>
+  <h3>Pricing Plans Page</h3>
+  <p>
+    A responsive pricing page built with HTML, CSS & JavaScript.  
+    It features a toggle between weekly, monthly, and semester plans,  
+    discounts, and WhatsApp integration for instant plan selection.
+  </p>
+  <div class="project-links">
+    <a href="https://bbm-notes-plans-prices.vercel.app/" target="_blank">🔗 Live Demo</a>
+    <a href="https://github.com/abdinasirhassan360-web/Notes-Pricing-Plans" target="_blank">💻 Source Code</a>
+  </div>
+</div>
+        </section>
+    </main>
+    <section id="contact">
+  <h2>Contact Me</h2>
+  <p>If you'd like to get in touch, feel free to reach out via email or connect on WhatsApp.</p>
+  <div class="contact-links">
+    <a href="mailto:abdinasralihassan@gmail.com" target="_blank">
+      <i class="fas fa-envelope"></i> Email Me
+    </a>
+    <a href="https://wa.me/254741769051" target="_blank">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+  </div>
+
+</section>
+<script>
+  function openPanel() {
+    document.getElementById("sidePanel").style.width = "250px";
+  }
+
+  function closePanel() {
+    document.getElementById("sidePanel").style.width = "0";
+  }
+</script>
+
+</body>
+</html>
