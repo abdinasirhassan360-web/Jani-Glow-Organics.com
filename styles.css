@@ -20,7 +20,7 @@ nav {
   z-index: 1000;
 }
 main {
-  margin-top: 40px; /* to avoid content being hidden behind fixed navbar */
+  margin-top: 20px; /* to avoid content being hidden behind fixed navbar */
 }
 .nav-container {
   display: flex;
