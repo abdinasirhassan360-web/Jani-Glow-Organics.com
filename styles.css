@@ -19,7 +19,9 @@ nav {
   width: 100%;
   z-index: 1000;
 }
-
+main {
+  margin-top: 40px; /* to avoid content being hidden behind fixed navbar */
+}
 .nav-container {
   display: flex;
   align-items: center;
@@ -66,7 +68,7 @@ nav {
 .hamburger div {
   width: 25px;
   height: 3px;
-  background-color: #db932c;
+  background-color: #ffffff;
   margin: 4px 0;
   transition: 0.3s;
 }
@@ -78,7 +80,7 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #333;
+  background-color: #306e38;
   overflow-x: hidden;
   transition: 0.3s;
   padding-top: 60px;
@@ -86,14 +88,14 @@ nav {
 }
 .side-panel a {
   display: block;
-  color: #db932c;
+  color: #ffffff;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 1.2rem;
   transition: 0.2s;
 }
 .side-panel a:hover {
-  background-color: #575757;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .side-panel .close-btn {
   position: absolute;
