@@ -201,7 +201,7 @@ main {
 section > h2 {
     text-align: center;
 }
-.project-card {
+.product-card {
   background: #202020;
   border-radius: 12px;
   padding: 1.5rem;
@@ -210,28 +210,28 @@ section > h2 {
   max-width: 700px;
 }
 
-.project-card img {
+.product-card img {
   width: 100%;
   max-width: 500px;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
 
-.project-card h3 {
+.product-card h3 {
   margin: 0.5rem 0;
   color: white;
 }
 
-.project-card p {
+.product-card p {
   color: #db932c;
   font-size: 1rem;
 }
 
-.project-links {
+.product-links {
   margin-top: 1rem;
 }
 
-.project-links a {
+.product-links a {
   display: inline-block;
   margin: 0 0.5rem;
   color: #db932c;
@@ -241,7 +241,7 @@ section > h2 {
   transition: color 0.2s;
 }
 
-.project-links a:hover {
+.product-links a:hover {
   color: white;
 }
 
@@ -283,11 +283,11 @@ section > h2 {
     font-size: 1.1rem;
   }
 
-  .project-card {
+  .product-card {
     padding: 1rem;
   }
 
-  .project-card p {
+  .product-card p {
     font-size: 0.9rem;
   }
 }
