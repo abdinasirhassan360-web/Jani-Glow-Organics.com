@@ -9,17 +9,19 @@ body {
 
 /* ===== Navigation Bar ===== */
 nav {
-  background-color: ##2a7135;
+  background-color: #2a7135;
   padding: 1em 0;
   display: flex;
   align-items: center;
   justify-content: center; /* centers nav container */
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
 }
-
+main {
+    padding-top: 90px; /* to prevent content being hidden under fixed navbar */
+}
 .nav-container {
   display: flex;
   align-items: center;
@@ -184,19 +186,21 @@ nav {
   margin-top: 0.5em;
 }
 
-/* ===== Projects Section ===== */
-#projects {
+/* ===== Products Section ===== */
+#products {
   padding: 4rem 8%;
   margin-top: 0;
 }
 
-#projects h2 {
+#products h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
   color: white;
 }
-
+section > h2 {
+    text-align: center;
+}
 .project-card {
   background: #202020;
   border-radius: 12px;
