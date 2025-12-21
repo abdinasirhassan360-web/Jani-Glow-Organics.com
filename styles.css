@@ -10,10 +10,6 @@ body {
 /* ===== Navigation Bar ===== */
 nav.main-nav {
   background-color: #2a7135;
-  padding: 1em 0;
-  display: flex;
-  align-items: center;
-  justify-content: center; /* centers nav container */
   position: fixed;
   top: 0;
   width: 100%;
@@ -78,13 +74,14 @@ main {
   height: 100%;
   width: 0;
   position: fixed;
-  top: 0;
   right: 0;
   background-color: #306e38;
   overflow-x: hidden;
   transition: 0.3s;
-  padding-top: 60px;
   z-index: 1000;
+  top: 70px; /* same as navbar height */
+  height: calc(100% - 70px);
+  padding-top: 30px;
 }
 .side-panel a {
   display: block;
@@ -112,6 +109,8 @@ main {
   }
   .hamburger {
     display: flex;
+    position: relative;
+    z-index: 1100;
   }
 }
 
