@@ -260,6 +260,64 @@ section > h2 {
   transform: translateY(-4px);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
+/* ===== Benefits Section ===== */
+.benefits {
+  padding: 4rem 8%;
+  background-color: #285125; /* darker green for section separation */
+  color: #ffffff;
+}
+
+.benefits h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.benefits-intro {
+  max-width: 750px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #e6f2e6;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.benefit-card {
+  background-color: #306e38;
+  border-radius: 14px;
+  padding: 1.8rem 1.5rem;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.benefit-card i {
+  font-size: 2rem;
+  color: #9aca42;
+  margin-bottom: 0.8rem;
+}
+
+.benefit-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  color: #ffffff;
+}
+
+.benefit-card p {
+  font-size: 0.95rem;
+  color: #d7e8d7;
+}
 
 /* ===== Responsive Design ===== */
 /* Tablet and up */
