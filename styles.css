@@ -353,6 +353,68 @@ main {
   background-color: #db932c;
   color: #fff;
 }
+/* ===== Contact CTA Section ===== */
+.contact-cta {
+  background-color: #2a7135; /* brand green */
+  color: #ffffff;
+  padding: 4rem 8%;
+  text-align: center;
+}
+
+.contact-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #e6f2e6;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8em 1.5em;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.cta-btn i {
+  font-size: 1.2em;
+}
+
+/* Button Colors */
+.cta-btn.whatsapp { background-color: #25d366; color: white; }
+.cta-btn.whatsapp:hover { background-color: #1ebe5d; }
+
+.cta-btn.instagram { background-color: #e1306c; color: white; }
+.cta-btn.instagram:hover { background-color: #c1275b; }
+
+.cta-btn.facebook { background-color: #1877f2; color: white; }
+.cta-btn.facebook:hover { background-color: #145ec0; }
+
+.cta-btn.tiktok { background-color: #010101; color: white; }
+.cta-btn.tiktok:hover { background-color: #333333; }
+
+/* Responsive Buttons */
+@media (max-width: 480px) {
+  .cta-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
 
 /* ===== Responsive tweaks ===== */
 @media (max-width: 768px) {
