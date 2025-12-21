@@ -8,7 +8,7 @@ body {
 }
 
 /* ===== Navigation Bar ===== */
-nav {
+nav.main-nav {
   background-color: #2a7135;
   padding: 1em 0;
   display: flex;
