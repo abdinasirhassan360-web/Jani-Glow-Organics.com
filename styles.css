@@ -244,6 +244,16 @@ section > h2 {
 .product-links a:hover {
   color: white;
 }
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.product-link .product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
 
 /* ===== Responsive Design ===== */
 /* Tablet and up */
