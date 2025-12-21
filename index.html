@@ -13,20 +13,19 @@
 <body>
 
     <!-- ===== Navigation Bar ===== -->
-    <nav>
+    <nav class="main-nav">
   <div class="nav-container">
     <a href="index.html">
-    <img src="images/Jani_Glow_Organics_Logo.png" alt="Ali Hassan headshot" class="headshot-nav">
+      <img src="images/Jani_Glow_Organics_Logo.png" alt="Logo" class="headshot-nav">
     </a>
+
     <ul class="nav-links">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="index.html#products">Products</a></li>
-  <li><a href="#benefits">Benefits</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#products">Products</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-
-    <!-- Hamburger Icon for Mobile -->
     <div class="hamburger" onclick="openPanel()">
       <div></div>
       <div></div>
@@ -34,16 +33,13 @@
     </div>
   </div>
 
-  <!-- Side Panel for Mobile Links -->
   <div id="sidePanel" class="side-panel">
-  <span class="close-btn" onclick="closePanel()">&times;</span>
-
-  <a href="index.html" onclick="closePanel()">Home</a>
-  <a href="index.html#products" onclick="closePanel()">Products</a>
-  <a href="#benefits" onclick="closePanel()">Benefits</a>
-  <a href="#contact" onclick="closePanel()">Contact</a>
-</div>
-
+    <span class="close-btn" onclick="closePanel()">&times;</span>
+    <a href="index.html" onclick="closePanel()">Home</a>
+    <a href="index.html#products" onclick="closePanel()">Products</a>
+    <a href="#benefits" onclick="closePanel()">Benefits</a>
+    <a href="#contact" onclick="closePanel()">Contact</a>
+  </div>
 </nav>
 
 

@@ -1,4 +1,8 @@
 /* ===== Global Reset ===== */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,16 +19,15 @@ nav.main-nav {
   width: 100%;
   z-index: 1000;
 }
-main {
-  margin-top: 70px; /* to avoid content being hidden behind fixed navbar */
-}
+
 .nav-container {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* headshot left, links right */
-  width: 100%;
-  padding: 0 5%; /* makes navbar match content width */
-  max-width: 1200px; /* keeps navbar neat on large screens */
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5%;
+  height: 70px;
 }
 
 .headshot-nav {
@@ -35,6 +38,7 @@ main {
   border: 2px solid #9aca42;
 }
 
+/* Nav links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -44,10 +48,10 @@ main {
 }
 
 .nav-links a {
-  color: #ffffff; /* orange links */
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   transition: color 0.2s;
 }
 
@@ -55,63 +59,69 @@ main {
   color: #9aca42;
 }
 
-/* Hamburger Icon */
+/* Hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  z-index: 1100;
 }
+
 .hamburger div {
   width: 25px;
   height: 3px;
   background-color: #ffffff;
   margin: 4px 0;
-  transition: 0.3s;
 }
 
-/* Side Panel */
+/* Side panel */
 .side-panel {
   height: 100%;
   width: 0;
   position: fixed;
+  top: 70px; /* below navbar */
   right: 0;
   background-color: #306e38;
   overflow-x: hidden;
   transition: 0.3s;
-  z-index: 1000;
-  top: 70px; /* same as navbar height */
-  height: calc(100% - 70px);
+  z-index: 999;
   padding-top: 30px;
 }
+
 .side-panel a {
   display: block;
-  color: #ffffff;
-  padding: 10px 20px;
-  text-decoration: none;
+  color: #fff;
+  padding: 15px 20px;
   font-size: 1.2rem;
-  transition: 0.2s;
+  text-decoration: none;
+  transition: background 0.2s;
 }
+
 .side-panel a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
+
 .side-panel .close-btn {
   position: absolute;
-  top: 20px;
-  right: 25px;
+  top: 10px;
+  right: 20px;
   font-size: 2rem;
   cursor: pointer;
 }
 
-/* Responsive: Show hamburger and hide nav links on small screens */
+/* ===== Responsive ===== */
 @media screen and (max-width: 768px) {
   .nav-links {
     display: none;
   }
   .hamburger {
     display: flex;
-    position: relative;
-    z-index: 1100;
   }
+}
+
+/* ===== Main Content Spacing ===== */
+main {
+  margin-top: 70px; /* avoids content hidden behind navbar */
 }
 
 /* ===== About Section ===== */
@@ -130,18 +140,17 @@ main {
 }
 
 .headshot-about {
-  position: relative;             /* makes z-index work */
-  z-index: 2;                     /* stays above brown overlay */
+  position: relative;
+  z-index: 2;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid #ADD8E6;      /* light blue border */
-  box-shadow: 0 4px 12px rgba(173, 216, 230, 0.8); /* light blue glow */
+  border: 3px solid #ADD8E6;
+  box-shadow: 0 4px 12px rgba(173, 216, 230, 0.8);
   margin-top: 1em;
   margin-bottom: 1rem;
 }
-
 
 /* ===== Hero Section ===== */
 .intro {
@@ -197,9 +206,7 @@ main {
   text-align: center;
   color: white;
 }
-section > h2 {
-    text-align: center;
-}
+
 .product-card {
   background: #202020;
   border-radius: 12px;
@@ -207,6 +214,12 @@ section > h2 {
   margin: 0 auto 2rem auto;
   text-align: center;
   max-width: 700px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
 }
 
 .product-card img {
@@ -225,44 +238,17 @@ section > h2 {
   color: #db932c;
   font-size: 1rem;
 }
-.products-intro {
-  max-width: 700px;
-  margin: 0 auto 2rem auto;
-  text-align: center;
-  color: #ffffff;
-  font-size: 1.1rem;
-}
-.product-links {
-  margin-top: 1rem;
-}
 
-.product-links a {
-  display: inline-block;
-  margin: 0 0.5rem;
-  color: #db932c;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.2s;
-}
-
-.product-links a:hover {
-  color: white;
-}
 .product-link {
   text-decoration: none;
   color: inherit;
   display: block;
 }
 
-.product-link .product-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-}
 /* ===== Benefits Section ===== */
 .benefits {
   padding: 4rem 8%;
-  background-color: #285125; /* darker green for section separation */
+  background-color: #285125;
   color: #ffffff;
 }
 
@@ -293,12 +279,6 @@ section > h2 {
   border-radius: 14px;
   padding: 1.8rem 1.5rem;
   text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.benefit-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 }
 
 .benefit-card i {
@@ -318,52 +298,7 @@ section > h2 {
   color: #d7e8d7;
 }
 
-/* ===== Responsive Design ===== */
-/* Tablet and up */
-@media (min-width: 600px) {
-  .headshot-about {
-    width: 180px;
-    height: 180px;
-  }
-}
-
-/* Laptops and desktops */
-@media (min-width: 1024px) {
-  .headshot-about {
-    width: 220px;
-    height: 220px;
-  }
-}
-@media (max-width: 768px) {
-  nav ul {
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    padding-right: 5%;
-  }
-}
-
-@media (max-width: 480px) {
-  .intro {
-    min-height: 40vh;
-    padding: 1.5rem 1rem;
-  }
-
-  .intro h1 {
-    font-size: 1.8rem;
-  }
-
-  .intro h2 {
-    font-size: 1.1rem;
-  }
-
-  .product-card {
-    padding: 1rem;
-  }
-
-  .product-card p {
-    font-size: 0.9rem;
-  }
-}
+/* ===== Contact Section ===== */
 #contact {
   padding: 4rem 8%;
   text-align: center;
@@ -377,7 +312,7 @@ section > h2 {
 
 #contact p {
   margin-bottom: 1.5rem;
-  color: #db932c; /* orange text */
+  color: #db932c;
   font-size: 1.1rem;
 }
 
@@ -386,33 +321,6 @@ section > h2 {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-}
-
-.contact-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: #db932c; /* orange */
-  transition: color 0.2s, transform 0.2s;
-}
-
-.contact-link i {
-  font-size: 1.5rem;
-  color: #db932c;
-  transition: color 0.2s;
-}
-
-.contact-link:hover,
-.contact-link:hover i {
-  color: white;
-  transform: scale(1.05);
-}
-.contact-links {
-  display: flex;
-  gap: 1.5rem;
   margin-top: 1em;
 }
 
@@ -422,7 +330,7 @@ section > h2 {
   gap: 0.5rem;
   padding: 0.6em 1.2em;
   border: 2px solid #db932c;
-  border-radius: 30px; /* makes it rounded */
+  border-radius: 30px;
   color: #db932c;
   font-weight: bold;
   text-decoration: none;
@@ -437,43 +345,33 @@ section > h2 {
   background-color: #db932c;
   color: #fff;
 }
-/* ===== Shea Butter Variants Grid ===== */
-.variants-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  max-width: 1100px;
-  margin: 2.5rem auto 0 auto;
+
+/* ===== Responsive tweaks ===== */
+@media (max-width: 768px) {
+  .intro {
+    padding: 2rem 5%;
+    min-height: 50vh;
+  }
+
+  .product-card {
+    padding: 1rem;
+  }
+
+  .product-card p {
+    font-size: 0.9rem;
+  }
+
+  .headshot-about {
+    width: 150px;
+    height: 150px;
+  }
 }
 
-.variant-card {
-  background: #202020;
-  border-radius: 12px;
-  padding: 1.2rem;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.variant-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
-
-.variant-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 0.8rem;
-}
-
-.variant-card h4 {
-  margin: 0.4rem 0;
-  color: #ffffff;
-  font-size: 1.05rem;
-}
-
-.variant-card p {
-  font-size: 0.9rem;
-  color: #9aca42; /* brand green highlight */
+@media (max-width: 480px) {
+  .intro h1 {
+    font-size: 1.8rem;
+  }
+  .intro h2 {
+    font-size: 1.1rem;
+  }
 }
