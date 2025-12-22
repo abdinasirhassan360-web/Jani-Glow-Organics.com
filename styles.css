@@ -252,6 +252,7 @@ main {
 #products {
   padding: 4rem 8%;
   margin-top: 0;
+  background-color: #ffffff; /* brand green */
 }
 
 #products h2 {
