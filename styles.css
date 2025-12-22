@@ -549,3 +549,6 @@ main {
 .whatsapp-option:hover {
   background-color: #1ebe5d;
 }
+.whatsapp-bubble.show {
+  display: block;
+}
