@@ -294,11 +294,11 @@ main {
 
 .product-card h3 {
   margin: 0.5rem 0;
-  color: #9aca42;
+  color: #ffffff;
 }
 
 .product-card p {
-  color: #ffffff;
+  color: #9aca42;
   font-size: 1rem;
 }
 
