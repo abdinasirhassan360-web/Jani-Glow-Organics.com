@@ -147,7 +147,7 @@ main {
   position: absolute;
   inset: 0;
   background: url('images/greenery-hero-background.png') no-repeat center center/cover;
-  filter: blur(6px) brightness(1.2); /* blur and brighten everything */
+  filter: blur(6px) brightness(1.05); /* blur and brighten everything */
   z-index: 0; /* behind everything */
 }
 
