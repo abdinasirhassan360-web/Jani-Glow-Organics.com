@@ -329,7 +329,7 @@ main {
   gap: 2rem;
   max-width: 1100px;
   margin: 0 auto;
-  justify-content: center; /* centers last row cards */
+  justify-items: center; /* centers last row cards */
 }
 
 .benefit-card {
