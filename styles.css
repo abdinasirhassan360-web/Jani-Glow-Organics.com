@@ -197,14 +197,7 @@ main {
   text-align: center;
   color: white;
   padding: 3rem 8%;
-}
-
-.intro::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(72, 55, 21, 0.6);
-  z-index: 1;
+  filter: blur(4px);
 }
 
 .intro h1,
