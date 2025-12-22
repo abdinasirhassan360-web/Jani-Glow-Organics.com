@@ -126,7 +126,7 @@ main {
   margin-top: 60px; /* avoids content hidden behind navbar */
 }
 
-/* ===== About / Hero Section ===== */
+/* ===== Hero Section ===== */
 .about-container {
   position: relative;
   background: url('images/greenery-hero-background.png') no-repeat center center/cover;
@@ -138,36 +138,27 @@ main {
   text-align: center;
   padding: 0 5%;
   color: white;
+  overflow: hidden; /* ensures the blur stays contained */
 }
 
-/* Optional: slight overall background brightness (not affecting text area) */
+/* Full background blur layer */
 .about-container::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(255, 255, 255, 0.05); /* tiny light overlay */
-  z-index: 0;
+  background: url('images/greenery-hero-background.png') no-repeat center center/cover;
+  filter: blur(6px) brightness(1.2); /* blur and brighten everything */
+  z-index: 0; /* behind everything */
 }
 
-/* Text container with highlighted blur behind text */
+/* Text container (sharp and readable) */
 .about-text {
   position: relative;
-  z-index: 2;
+  z-index: 1; /* above blurred background */
+  padding: 1rem 2rem; /* optional padding around text */
 }
 
-.about-text::before {
-  content: "";
-  position: absolute;
-  top: -10px;       /* adjust padding around text */
-  left: -20px;
-  right: -20px;
-  bottom: -10px;
-  background-color: rgba(255, 255, 255, 0.3); /* bright, semi-transparent */
-  backdrop-filter: blur(6px); /* blur the background behind text */
-  border-radius: 10px; /* rounded edges for the highlight */
-  z-index: -1; /* behind text */
-}
-
+/* Text styling */
 .about-text h1 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 3rem; /* adjust for hero */
