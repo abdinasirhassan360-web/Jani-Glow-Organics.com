@@ -644,3 +644,32 @@ main {
   opacity: 1;
   transform: translateX(0);
 }
+/* ===== Desktop animations (default) ===== */
+.fade-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ===== Mobile override: fade UP instead ===== */
+@media (max-width: 768px) {
+  .fade-left,
+  .fade-right {
+    transform: translateY(40px);
+  }
+
+  .fade-in {
+    transform: translateY(0);
+  }
+}
