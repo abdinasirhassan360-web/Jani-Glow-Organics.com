@@ -329,7 +329,7 @@ main {
   gap: 2rem;
   max-width: 1100px;
   margin: 0 auto;
-  justify-items: center; /* centers last row cards */
+  justify-content: center; /* centers last row cards */
 }
 
 .benefit-card {
@@ -338,6 +338,7 @@ main {
   padding: 1.8rem 1.5rem;
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 220px; /* ensures uniform column width */
 }
 
 .benefit-card:hover {
