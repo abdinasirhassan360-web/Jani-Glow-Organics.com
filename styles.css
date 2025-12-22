@@ -124,72 +124,10 @@ main {
   margin-top: 70px; /* avoids content hidden behind navbar */
 }
 
-/* ===== About / Hero Section ===== */
-.about-container {
-  position: relative;
-  background: url('images/greenery-hero-background.png') no-repeat center center/cover;
-  height: 80vh; /* adjust height as needed */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 0 5%;
-  color: white;
-}
-
-.about-container::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.4); /* overlay for text readability */
-  z-index: 1;
-}
-
-.about-text {
-  position: relative;
-  z-index: 2;
-}
-
-.about-text h1 {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 3rem; /* adjust for hero */
-  margin: 0;
-}
-
-.about-text h2 {
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #9aca42;
-  margin-top: 0.5em;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  .about-text h1 {
-    font-size: 2rem;
-  }
-  .about-text h2 {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-text h1 {
-    font-size: 1.5rem;
-  }
-  .about-text h2 {
-    font-size: 1rem;
-  }
-}
-
-
 /* ===== Hero Section ===== */
 .intro {
   position: relative;
-  background: url("images/greenery-hero-background.png") no-repeat center center/cover;
-  min-height: 60vh;
+  min-height: 80vh; /* adjust height as needed */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -197,15 +135,20 @@ main {
   text-align: center;
   color: white;
   padding: 3rem 8%;
+  z-index: 1; /* text above background */
 }
+
+/* Background image layer with blur */
 .intro::before {
   content: "";
   position: absolute;
   inset: 0;
   background: url("images/greenery-hero-background.png") no-repeat center center/cover;
-  filter: blur(4px); /* only the background is blurred */
-  z-index: -1; /* behind the text */
+  filter: blur(4px); /* background blur */
+  z-index: -1; /* behind text */
 }
+
+/* Text styling */
 .intro h1,
 .intro h2 {
   position: relative;
@@ -214,7 +157,7 @@ main {
 
 .intro h1 {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 0;
 }
 
@@ -224,6 +167,17 @@ main {
   font-weight: 700;
   color: #9aca42;
   margin-top: 0.5em;
+}
+
+/* Responsive Hero Text */
+@media (max-width: 768px) {
+  .intro h1 { font-size: 2rem; }
+  .intro h2 { font-size: 1.2rem; }
+}
+
+@media (max-width: 480px) {
+  .intro h1 { font-size: 1.5rem; }
+  .intro h2 { font-size: 1rem; }
 }
 
 /* ===== Products Section ===== */
@@ -253,7 +207,7 @@ main {
   max-width: 700px;
   margin: 0 auto 2rem auto;
   text-align: center;
-  color: #ffffff; /* white text */
+  color: #ffffff;
   font-size: 1.1rem;
 }
 
@@ -288,7 +242,7 @@ main {
 /* ===== Benefits Section ===== */
 .benefits {
   padding: 4rem 8%;
-  background-color: #285125; /* darker green for section separation */
+  background-color: #285125;
   color: #ffffff;
 }
 
@@ -312,7 +266,7 @@ main {
   gap: 2rem;
   max-width: 1100px;
   margin: 0 auto;
-  justify-content: center; /* centers last row cards */
+  justify-content: center;
 }
 
 .benefit-card {
@@ -344,7 +298,6 @@ main {
   font-size: 0.95rem;
   color: #d7e8d7;
 }
-
 
 /* ===== Contact Section ===== */
 #contact {
@@ -393,9 +346,10 @@ main {
   background-color: #db932c;
   color: #fff;
 }
+
 /* ===== Contact CTA Section ===== */
 .contact-cta {
-  background-color: #2a7135; /* brand green */
+  background-color: #2a7135;
   color: #ffffff;
   padding: 4rem 8%;
   text-align: center;
@@ -436,16 +390,16 @@ main {
 }
 
 /* Button Colors */
-.cta-btn.whatsapp { background-color: #25d366; color: white; }
+.cta-btn.whatsapp { background-color: #25d366; }
 .cta-btn.whatsapp:hover { background-color: #1ebe5d; }
 
-.cta-btn.instagram { background-color: #e1306c; color: white; }
+.cta-btn.instagram { background-color: #e1306c; }
 .cta-btn.instagram:hover { background-color: #c1275b; }
 
-.cta-btn.facebook { background-color: #1877f2; color: white; }
+.cta-btn.facebook { background-color: #1877f2; }
 .cta-btn.facebook:hover { background-color: #145ec0; }
 
-.cta-btn.tiktok { background-color: #010101; color: white; }
+.cta-btn.tiktok { background-color: #010101; }
 .cta-btn.tiktok:hover { background-color: #333333; }
 
 /* Responsive Buttons */
@@ -458,33 +412,16 @@ main {
 
 /* ===== Responsive tweaks ===== */
 @media (max-width: 768px) {
-  .intro {
-    padding: 2rem 5%;
-    min-height: 50vh;
-  }
-
-  .product-card {
-    padding: 1rem;
-  }
-
-  .product-card p {
-    font-size: 0.9rem;
-  }
-
-  .headshot-about {
-    width: 150px;
-    height: 150px;
-  }
+  .intro { padding: 2rem 5%; min-height: 60vh; }
+  .product-card { padding: 1rem; }
+  .product-card p { font-size: 0.9rem; }
 }
 
 @media (max-width: 480px) {
-  .intro h1 {
-    font-size: 1.8rem;
-  }
-  .intro h2 {
-    font-size: 1.1rem;
-  }
+  .intro h1 { font-size: 1.8rem; }
+  .intro h2 { font-size: 1.1rem; }
 }
+
 /* ===== Floating WhatsApp ===== */
 .whatsapp-float {
   position: fixed;
@@ -534,27 +471,6 @@ main {
   transform: rotate(45deg);
 }
 
-.bubble-text {
-  font-size: 0.95rem;
-  color: #333;
-  margin-bottom: 0.8rem;
-}
-
-.whatsapp-send {
-  display: block;
-  text-align: center;
-  background-color: #25D366;
-  color: #ffffff;
-  padding: 0.6rem;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 0.9rem;
-}
-
-.whatsapp-send:hover {
-  background-color: #1ebe5d;
-}
 .bubble-title {
   font-weight: bold;
   margin-bottom: 0.6rem;
@@ -581,6 +497,7 @@ main {
 .whatsapp-option:hover {
   background-color: #1ebe5d;
 }
+
 .whatsapp-bubble.show {
   display: block;
 }
