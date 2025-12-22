@@ -523,3 +523,29 @@ main {
 .whatsapp-send:hover {
   background-color: #1ebe5d;
 }
+.bubble-title {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+  color: #222;
+  font-size: 0.95rem;
+}
+
+.whatsapp-option {
+  display: block;
+  text-decoration: none;
+  background-color: #25D366;
+  color: white;
+  padding: 0.6rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.whatsapp-option:last-child {
+  margin-bottom: 0;
+}
+
+.whatsapp-option:hover {
+  background-color: #1ebe5d;
+}
