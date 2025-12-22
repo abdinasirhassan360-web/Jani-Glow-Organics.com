@@ -122,7 +122,7 @@ nav.main-nav {
 
 /* ===== Main Content Spacing ===== */
 main {
-  margin-top: 70px; /* avoids content hidden behind navbar */
+  margin-top: 60px; /* avoids content hidden behind navbar */
 }
 
 /* ===== About / Hero Section ===== */
