@@ -188,7 +188,7 @@ main {
 /* ===== Hero Section ===== */
 .intro {
   position: relative;
-  background: url("images/background-image-portfolio.svg") no-repeat center center/cover;
+  background: url("images/greenery-hero-background.png") no-repeat center center/cover;
   min-height: 60vh;
   display: flex;
   flex-direction: column;
@@ -197,10 +197,15 @@ main {
   text-align: center;
   color: white;
   padding: 3rem 8%;
-  filter: blur(4px);
-  backdrop-filter: blur(4px);
 }
-
+.intro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("images/greenery-hero-background.png") no-repeat center center/cover;
+  filter: blur(4px); /* only the background is blurred */
+  z-index: -1; /* behind the text */
+}
 .intro h1,
 .intro h2 {
   position: relative;
