@@ -198,6 +198,7 @@ main {
   color: white;
   padding: 3rem 8%;
   filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 .intro h1,
