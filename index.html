@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
-
 <body>
 
     <!-- ===== Navigation Bar ===== -->
@@ -133,6 +132,26 @@
     </div>
   </div>
 </section>
+<!-- Floating WhatsApp Button -->
+<div class="whatsapp-float">
+  <button class="whatsapp-btn" onclick="toggleWhatsAppBubble()">
+    <i class="fab fa-whatsapp"></i>
+  </button>
+
+  <div class="whatsapp-bubble" id="whatsappBubble">
+    <p class="bubble-text">
+      Hello 👋, I'm interested in your products. Could you share more details?
+    </p>
+
+    <a
+      href="https://wa.me/254715194165?text=Hello%20%F0%9F%91%8B%2C%20I'm%20interested%20in%20your%20products.%20Could%20you%20share%20more%20details%3F"
+      target="_blank"
+      class="whatsapp-send"
+    >
+      Send on WhatsApp
+    </a>
+  </div>
+</div>
 
 <script>
   function openPanel() {
@@ -143,6 +162,12 @@
     document.getElementById("sidePanel").style.width = "0";
   }
 </script>
-
+<script>
+  function toggleWhatsAppBubble() {
+    const bubble = document.getElementById("whatsappBubble");
+    bubble.style.display =
+      bubble.style.display === "block" ? "none" : "block";
+  }
+</script>
 </body>
 </html>

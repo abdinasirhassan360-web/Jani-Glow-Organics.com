@@ -453,3 +453,73 @@ main {
     font-size: 1.1rem;
   }
 }
+/* ===== Floating WhatsApp ===== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2000;
+}
+
+.whatsapp-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #25D366;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-btn i {
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.whatsapp-bubble {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  width: 260px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  display: none;
+}
+
+.whatsapp-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  right: 22px;
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  transform: rotate(45deg);
+}
+
+.bubble-text {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+.whatsapp-send {
+  display: block;
+  text-align: center;
+  background-color: #25D366;
+  color: #ffffff;
+  padding: 0.6rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.whatsapp-send:hover {
+  background-color: #1ebe5d;
+}
