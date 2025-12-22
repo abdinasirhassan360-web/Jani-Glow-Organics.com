@@ -124,33 +124,66 @@ main {
   margin-top: 70px; /* avoids content hidden behind navbar */
 }
 
-/* ===== About Section ===== */
+/* ===== About / Hero Section ===== */
 .about-container {
+  position: relative;
+  background: url('images/greenery-hero-background.png') no-repeat center center/cover;
+  height: 80vh; /* adjust height as needed */
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  gap: 2rem;
+  align-items: center;
   text-align: center;
-  flex-wrap: wrap;
+  padding: 0 5%;
+  color: white;
 }
 
-.about-text h1,
-.about-text h2 {
-  margin: 0.5rem 0;
+.about-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* overlay for text readability */
+  z-index: 1;
 }
 
-.headshot-about {
+.about-text {
   position: relative;
   z-index: 2;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #ADD8E6;
-  box-shadow: 0 4px 12px rgba(173, 216, 230, 0.8);
-  margin-top: 1em;
-  margin-bottom: 1rem;
 }
+
+.about-text h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem; /* adjust for hero */
+  margin: 0;
+}
+
+.about-text h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #9aca42;
+  margin-top: 0.5em;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .about-text h1 {
+    font-size: 2rem;
+  }
+  .about-text h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-text h1 {
+    font-size: 1.5rem;
+  }
+  .about-text h2 {
+    font-size: 1rem;
+  }
+}
+
 
 /* ===== Hero Section ===== */
 .intro {
