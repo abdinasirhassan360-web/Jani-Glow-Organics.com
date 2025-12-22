@@ -622,3 +622,25 @@ main {
 .whatsapp-bubble.show {
   display: block;
 }
+/* ===== Scroll Fade Animations ===== */
+.fade-left,
+.fade-right {
+  opacity: 0;
+  transform: translateX(0);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  will-change: opacity, transform;
+}
+
+.fade-left {
+  transform: translateX(-40px);
+}
+
+.fade-right {
+  transform: translateX(40px);
+}
+
+/* When visible */
+.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}

@@ -57,43 +57,43 @@
 
   <!-- PRODUCT CARDS -->
    <div class="products-grid">
-  <div class="product-card">
+  <div class="product-card fade-left">
     <img src="images/vanilla-shea.png" alt="Vanilla Shea Butter">
     <h3>Vanilla Shea Butter</h3>
     <p>Rich, creamy shea butter infused with natural vanilla for deep hydration and softness.</p>
   </div>
 
-  <div class="product-card">
+  <div class="product-card fade-right">
     <img src="images/mocha-shea.png" alt="Mocha Shea Butter">
     <h3>Mocha Shea Butter</h3>
     <p>A luxurious blend of chocolate and coffee aromas that nourishes and revitalizes skin.</p>
   </div>
 
-  <div class="product-card">
+  <div class="product-card fade-left">
     <img src="images/strawberry-shea.png" alt="Strawberry Shea Butter">
     <h3>Strawberry Shea Butter</h3>
     <p>Sweet strawberry essence with intense hydration for fresh, glowing skin.</p>
   </div>
 
-  <div class="product-card">
+  <div class="product-card fade-right">
     <img src="images/citrus-shea.png" alt="Citrus Sunrise Shea Butter">
     <h3>Citrus Sunrise Shea Butter</h3>
     <p>Invigorating citrus oils blended with vanilla for a refreshing daily moisturizer.</p>
   </div>
 
-  <div class="product-card">
+  <div class="product-card fade-left">
     <img src="images/mango-cream.png" alt="Mango Cream">
     <h3>Mango Cream</h3>
     <p>Tropical mango infused cream that deeply hydrates and softens the skin.</p>
   </div>
 
-  <div class="product-card">
+  <div class="product-card fade-right">
     <img src="images/tropical-shea.png" alt="Tropical Lemongrass Shea Butter">
     <h3>Tropical Lemongrass Shea Butter</h3>
     <p>Essential oils and sweet orange extract for a fresh, uplifting experience.</p>
   </div>
 
-  <div class="product-card">
+  <div class="product-card fade-left">
     <img src="images/jungle-green-shea.png" alt="Green Jungle Shea Butter">
     <h3>Green Jungle Shea Butter</h3>
     <p>Rosemary and peppermint oils energize and deeply moisturize your skin.</p>
@@ -208,6 +208,26 @@
   function toggleWhatsAppBubble() {
     document.getElementById("whatsappBubble").classList.toggle("show");
   }
+</script>
+<script>
+  const faders = document.querySelectorAll('.fade-left, .fade-right');
+
+  const appearOptions = {
+    threshold: 0.2
+  };
+
+  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+
+      entry.target.classList.add('fade-in');
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
 </script>
 
 </body>
