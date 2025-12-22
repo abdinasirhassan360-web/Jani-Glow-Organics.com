@@ -263,7 +263,7 @@ main {
 }
 
 .product-card {
-  background: #2a7135;
+  background: #306e38;
   border-radius: 12px;
   padding: 1.5rem;
   margin: 0 auto 2rem auto;
@@ -294,7 +294,7 @@ main {
 
 .product-card h3 {
   margin: 0.5rem 0;
-  color: #ffffff;
+  color: #9aca42;
 }
 
 .product-card p {
@@ -354,7 +354,7 @@ main {
 
 .benefit-card i {
   font-size: 2rem;
-  color: #2a7135;
+  color: #9aca42;
   margin-bottom: 0.8rem;
 }
 
