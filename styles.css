@@ -140,19 +140,32 @@ main {
   color: white;
 }
 
+/* Optional: slight overall background brightness (not affecting text area) */
 .about-container::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(255, 255, 255, 0); /* semi-transparent white overlay */
-  backdrop-filter: blur(4px);
-  filter: brightness(1.1)
+  background-color: rgba(255, 255, 255, 0.05); /* tiny light overlay */
+  z-index: 0;
 }
 
+/* Text container with highlighted blur behind text */
 .about-text {
   position: relative;
   z-index: 2;
-  backdrop-filter: blur(8px);
+}
+
+.about-text::before {
+  content: "";
+  position: absolute;
+  top: -10px;       /* adjust padding around text */
+  left: -20px;
+  right: -20px;
+  bottom: -10px;
+  background-color: rgba(255, 255, 255, 0.3); /* bright, semi-transparent */
+  backdrop-filter: blur(6px); /* blur the background behind text */
+  border-radius: 10px; /* rounded edges for the highlight */
+  z-index: -1; /* behind text */
 }
 
 .about-text h1 {
@@ -187,7 +200,6 @@ main {
     font-size: 1rem;
   }
 }
-
 
 /* ===== Hero Section ===== */
 .intro {
