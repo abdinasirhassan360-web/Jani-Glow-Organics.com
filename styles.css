@@ -27,7 +27,7 @@ nav.main-nav {
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 0 2%;
   height: 60px;
 }
 
@@ -72,7 +72,7 @@ nav.main-nav {
 .hamburger div {
   width: 25px;
   height: 3px;
-  background-color: #9aca42;
+  background-color: #306e38;
   margin: 4px 0;
 }
 
@@ -83,7 +83,7 @@ nav.main-nav {
   position: fixed;
   top: 70px; /* below navbar */
   right: 0;
-  background-color: #306e38;
+  background-color: #ffffff;
   overflow-x: hidden;
   transition: 0.3s;
   z-index: 999;
@@ -92,7 +92,7 @@ nav.main-nav {
 
 .side-panel a {
   display: block;
-  color: #fff;
+  color: #306e38;
   padding: 15px 20px;
   font-size: 1.2rem;
   text-decoration: none;
