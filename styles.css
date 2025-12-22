@@ -34,7 +34,7 @@ nav.main-nav {
 .headshot-nav {
   border-radius: 0; /* remove circular shape */
   border: none;      /* remove the ring */
-  width: 50px;       /* optional: increase logo size */
+  width: 80px;       /* optional: increase logo size */
   height: auto;      /* maintain aspect ratio */
   object-fit: contain; /* scale image properly */
 }
