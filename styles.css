@@ -32,12 +32,13 @@ nav.main-nav {
 }
 
 .headshot-nav {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: none;
+  border-radius: 0; /* remove circular shape */
+  border: none;      /* remove the ring */
+  width: 50px;       /* optional: increase logo size */
+  height: auto;      /* maintain aspect ratio */
+  object-fit: contain; /* scale image properly */
 }
+
 
 /* Nav links */
 .nav-links {
