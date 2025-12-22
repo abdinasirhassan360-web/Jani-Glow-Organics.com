@@ -28,12 +28,12 @@ nav.main-nav {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 5%;
-  height: 70px;
+  height: 60px;
 }
 
 .headshot-nav {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   object-fit: cover;
   border: none;
