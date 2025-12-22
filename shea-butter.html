@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Shea Butter Oil Line | Jani Glow Organics</title>
+
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -12,8 +13,8 @@
 
 <body>
 
-    <!-- ===== Navigation Bar ===== -->
-    <nav class="main-nav">
+<!-- ===== Navigation Bar ===== -->
+<nav class="main-nav">
   <div class="nav-container">
     <a href="index.html">
       <img src="images/Jani_Glow_Organics_Logo.png" alt="Logo" class="headshot-nav">
@@ -22,7 +23,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="index.html#products">Products</a></li>
-      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="index.html#benefits">Benefits</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
 
@@ -33,90 +34,79 @@
     </div>
   </div>
 
+  <!-- Side Panel -->
   <div id="sidePanel" class="side-panel">
     <span class="close-btn" onclick="closePanel()">&times;</span>
     <a href="index.html" onclick="closePanel()">Home</a>
     <a href="index.html#products" onclick="closePanel()">Products</a>
-    <a href="#benefits" onclick="closePanel()">Benefits</a>
+    <a href="index.html#benefits" onclick="closePanel()">Benefits</a>
     <a href="#contact" onclick="closePanel()">Contact</a>
   </div>
 </nav>
 
+<main>
 
+<!-- ===== Products Section ===== -->
+<section id="products">
+  <h2>Shea Butter Oil Line</h2>
 
-    <main>
-        <!-- ===== Products Section ===== -->
-        <section id="products">
-            <h2>Shea Butter Oil Line</h2>
-            <p class="products-intro">
-  Our Shea Butter Oil Line is crafted using only natural ingredients,
-  designed to nourish, protect, and restore your skin with no artificial chemicals.
-</p>
-            <div class="product-card">
-                <img src="images/vanilla-shea.png" alt="Shea Butter Oil Line Preview">
-                <h3>Vanilla Shea Butter</h3>
-                <p> 
-                    Indulge in the rich, creamy texture of our Vanilla Shea Butter, infused with natural vanilla extract for a delightful scent. 
-                    Perfect for deep hydration and skin nourishment, it leaves your skin feeling soft, smooth, and radiant.
-                </p>
-            </div>
-            <div class="product-card">
-                <img src="images/mocha-shea.png" alt="Shea Butter Oil Line Preview">
-                <h3>Mocha Shea Butter</h3>
-                <p> 
-                    Experience the rich, indulgent blend of chocolate and coffee in our Mocha Shea Butter. 
-                    This luxurious oil combines the deep, velvety notes of chocolate with the bold aroma of coffee, 
-                    creating a unique sensory experience that nourishes and revitalizes your skin.
-                </p>
-            </div>
-            <div class="product-card">
-                <img src="images/strawberry-shea.png" alt="Shea Butter Oil Line Preview">
-                <h3>Strawberry Shea Butter</h3>
-                <p> 
-                    Delight in the sweet, fruity essence of our Strawberry Shea Butter, enriched with natural strawberry extract. 
-                    This vibrant oil provides intense hydration while leaving your skin with a fresh, invigorating scent.
-                </p>
-            </div>
-            <div class="product-card">
-                <img src="images/citrus-shea.png" alt="Shea Butter Oil Line Preview">
-                <h3>Citrus Sunrise Shea Butter</h3>
-                <p> 
-                    Refresh your senses with our Citrus Sunrise Shea Butter, a zesty blend of orange and lemon essential oils combined with a touch of vanilla. 
-                    This invigorating oil revitalizes your skin while providing deep nourishment and a delightful fragrance.
-                </p>
-            </div>
-            <div class="product-card">
-                <img src="images/mango-cream.png" alt="Shea Butter Oil Line Preview">
-                <h3>Mango Cream</h3>
-                <p> 
-                    Experience the tropical goodness of our Mango Cream infused with vanilla and essential oils. 
-                    This luxurious blend deeply hydrates and revitalizes your skin, leaving it soft, smooth, and beautifully scented.
-                
-                </p>
-            </div>
-            <div class="product-card">
-                <img src="images/tropical-shea.png" alt="Shea Butter Oil Line Preview">
-                <h3>Tropical Lemongrass Shea Butter</h3>
-                <p> 
-                    Immerse yourself in the refreshing aroma of our Tropical Lemongrass Shea Butter, 
-                    enriched with essential oils and sweet orange extract. This revitalizing oil nourishes your skin while uplifting your spirits with its vibrant scent.
-                </p>
-            </div>
-            <div class="product-card">
-                <img src="images/jungle-green-shea.png" alt="Shea Butter Oil Line Preview">
-                <h3>Green Jungle Shea Butter</h3>
-                <p>  
-                    Experience the invigorating blend of our Green Jungle Shea Butter, infused with a carefully curated selection of essential oils including rosemary, and peppermint. 
-                    This energizing oil provides deep hydration while delivering a refreshing scent that revitalizes your senses.
-                </p>
-            </div>
-        </section>
-    </main>
-    <section id="contact" class="contact-cta">
+  <p class="products-intro">
+    Our Shea Butter Oil Line is crafted using only natural ingredients,
+    designed to nourish, protect, and restore your skin with no artificial chemicals.
+  </p>
+
+  <!-- PRODUCT CARDS -->
+  <div class="product-card">
+    <img src="images/vanilla-shea.png" alt="Vanilla Shea Butter">
+    <h3>Vanilla Shea Butter</h3>
+    <p>Rich, creamy shea butter infused with natural vanilla for deep hydration and softness.</p>
+  </div>
+
+  <div class="product-card">
+    <img src="images/mocha-shea.png" alt="Mocha Shea Butter">
+    <h3>Mocha Shea Butter</h3>
+    <p>A luxurious blend of chocolate and coffee aromas that nourishes and revitalizes skin.</p>
+  </div>
+
+  <div class="product-card">
+    <img src="images/strawberry-shea.png" alt="Strawberry Shea Butter">
+    <h3>Strawberry Shea Butter</h3>
+    <p>Sweet strawberry essence with intense hydration for fresh, glowing skin.</p>
+  </div>
+
+  <div class="product-card">
+    <img src="images/citrus-shea.png" alt="Citrus Sunrise Shea Butter">
+    <h3>Citrus Sunrise Shea Butter</h3>
+    <p>Invigorating citrus oils blended with vanilla for a refreshing daily moisturizer.</p>
+  </div>
+
+  <div class="product-card">
+    <img src="images/mango-cream.png" alt="Mango Cream">
+    <h3>Mango Cream</h3>
+    <p>Tropical mango infused cream that deeply hydrates and softens the skin.</p>
+  </div>
+
+  <div class="product-card">
+    <img src="images/tropical-shea.png" alt="Tropical Lemongrass Shea Butter">
+    <h3>Tropical Lemongrass Shea Butter</h3>
+    <p>Essential oils and sweet orange extract for a fresh, uplifting experience.</p>
+  </div>
+
+  <div class="product-card">
+    <img src="images/jungle-green-shea.png" alt="Green Jungle Shea Butter">
+    <h3>Green Jungle Shea Butter</h3>
+    <p>Rosemary and peppermint oils energize and deeply moisturize your skin.</p>
+  </div>
+
+</section>
+</main>
+
+<!-- ===== Contact CTA ===== -->
+<section id="contact" class="contact-cta">
   <div class="contact-container">
     <h2>Get in Touch with Us</h2>
-    <p>Have questions or want to place an order? Reach out to us directly via WhatsApp or follow us on social media.</p>
-    
+    <p>Have questions or want to place an order? Reach out or follow us on social media.</p>
+
     <div class="cta-buttons">
       <a href="https://instagram.com/yourusername" target="_blank" class="cta-btn instagram">
         <i class="fab fa-instagram"></i> Instagram
@@ -130,33 +120,35 @@
     </div>
   </div>
 </section>
-<!-- Floating WhatsApp Button -->
+
+<!-- ===== Floating WhatsApp Button ===== -->
 <div class="whatsapp-float">
   <button class="whatsapp-btn" onclick="toggleWhatsAppBubble()">
     <i class="fab fa-whatsapp"></i>
   </button>
 
   <div id="whatsappBubble" class="whatsapp-bubble">
-  <p class="bubble-title">Chat with us on WhatsApp</p>
+    <p class="bubble-title">Chat with us on WhatsApp</p>
 
-  <a
-    href="https://wa.me/254715194165?text=Hello%20👋,%20I'm%20interested%20in%20your%20products."
-    target="_blank"
-    class="whatsapp-option"
-  >
-    🧔 Swahili / English
-  </a>
+    <a
+      href="https://wa.me/254715194165?text=Hello%20%F0%9F%91%8B,%20I'm%20interested%20in%20your%20products."
+      target="_blank"
+      class="whatsapp-option"
+    >
+      🧔 Swahili / English
+    </a>
 
-  <a
-    href="https://wa.me/254720007721?text=Hello%20👋,%20I'm%20interested%20in%20your%20products."
-    target="_blank"
-    class="whatsapp-option"
-  >
-    👩 Somali / English
-  </a>
+    <a
+      href="https://wa.me/254720007721?text=Hello%20%F0%9F%91%8B,%20I'm%20interested%20in%20your%20products."
+      target="_blank"
+      class="whatsapp-option"
+    >
+      👩 Somali / English
+    </a>
+  </div>
 </div>
 
-
+<!-- ===== Scripts ===== -->
 <script>
   function openPanel() {
     document.getElementById("sidePanel").style.width = "250px";
@@ -165,17 +157,12 @@
   function closePanel() {
     document.getElementById("sidePanel").style.width = "0";
   }
-</script>
-</section>
-<script>
-  function openPanel() {
-    document.getElementById("sidePanel").style.width = "250px";
-  }
 
-  function closePanel() {
-    document.getElementById("sidePanel").style.width = "0";
+  function toggleWhatsAppBubble() {
+    document.getElementById("whatsappBubble").classList.toggle("show");
   }
 </script>
 
 </body>
 </html>
+
