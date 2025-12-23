@@ -130,7 +130,7 @@ main {
 .about-container {
   position: relative;
   background: url('images/greenery-hero-background.png') no-repeat center center/cover;
-  height: 60vh; /* adjust height as needed */
+  height: 70vh; /* adjust height as needed */
   display: flex;
   flex-direction: column;
   justify-content: center;
