@@ -200,7 +200,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: #F8F8F2;
   padding: 3rem 8%;
   z-index: 1; /* text above background */
 }
@@ -251,7 +251,7 @@ main {
 #products {
   padding: 4rem 8%;
   margin-top: 0;
-  background-color: #ffffff; /* brand green */
+  background-color: #F8F8F2; /* */
 }
 
 #products h2 {
@@ -288,7 +288,7 @@ main {
   max-width: 700px;
   margin: 0 auto 2rem auto;
   text-align: center;
-  color: #ffffff; /* white text */
+  color: #1ebe5d; /* text */
   font-size: 1.1rem;
 }
 
