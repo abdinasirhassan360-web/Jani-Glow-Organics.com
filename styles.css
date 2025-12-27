@@ -258,7 +258,7 @@ main {
   font-size: 2rem;
   margin-bottom: 2rem;
   text-align: center;
-  color: #9aca42;
+  color: #306e38;
 }
 /* ===== Products Grid ===== */
 .products-grid {
@@ -288,7 +288,7 @@ main {
   max-width: 700px;
   margin: 0 auto 2rem auto;
   text-align: center;
-  color: #306e38; /* text */
+  color: #9aca42; /* text */
   font-size: 1.1rem;
 }
 
