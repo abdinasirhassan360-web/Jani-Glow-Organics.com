@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jani Glow Organics</title>
+  <title>Herbal Powders Line | Jani Glow Organics</title>
+
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
+
 <body>
 
-    <!-- ===== Navigation Bar ===== -->
-    <nav class="main-nav">
+<!-- ===== Navigation Bar ===== -->
+<nav class="main-nav">
   <div class="nav-container">
     <a href="index.html">
       <img src="images/Jani_Glow_Organics_Logo.png" alt="Logo" class="headshot-nav">
@@ -21,7 +23,7 @@
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="index.html#products">Products</a></li>
-      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="index.html#benefits">Benefits</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
 
@@ -32,43 +34,49 @@
     </div>
   </div>
 
+  <!-- Side Panel -->
   <div id="sidePanel" class="side-panel">
     <span class="close-btn" onclick="closePanel()">&times;</span>
     <a href="index.html" onclick="closePanel()">Home</a>
     <a href="index.html#products" onclick="closePanel()">Products</a>
-    <a href="#benefits" onclick="closePanel()">Benefits</a>
+    <a href="index.html#benefits" onclick="closePanel()">Benefits</a>
     <a href="#contact" onclick="closePanel()">Contact</a>
   </div>
 </nav>
 
+<main>
 
-    <main>
-        <!-- Hero / About Section -->
-<section class="about-container">
-  <div class="about-text">
-    <h1>Welcome to Jani Glow Organics</h1>
-    <h2>Nature-Powered Herbal Wellness</h2>
+<!-- ===== Products Section ===== -->
+<section id="products">
+  <h2>Herbal Powders Line</h2>
+
+  <p class="products-intro">
+    Our Herbal Powders Line is crafted using only natural ingredients
+  </p>
+
+  <!-- PRODUCT CARDS -->
+   <div class="products-grid">
+  <div class="product-card fade-left">
+    <img src="images/Nderema-front-view.png" alt="Nderema front view">
+    <h3>Nderema Blend</h3>
+    <p>Rich, creamy shea butter infused with natural vanilla for deep hydration and softness.</p>
   </div>
-</section>
-        </section>
 
-        <!-- ===== Products Section ===== -->
-        <section id="products">
-            <h2>Our Products</h2>
-            <a href="shea-butter.html" class="product-link">
-            <div class="product-card">
-                <img src="images/Shea_Butter_Full_Collection.png" alt="Shea Butter Oil Line Preview">
-                <h3>Shea Butter Oil Line</h3>
-            </div>
-            </a>
-            <a href="herbal-powder.html" class="product-link">
-            <div class="product-card">
-                <img src="images/herbal-powders-line.png" alt="Herbal Powders Line Preview">
-                <h3>Herbal Powders Line</h3>
-            </div>
-            </a>
-        </section>
-        <section id="benefits" class="benefits">
+  <div class="product-card fade-right">
+    <img src="images/moringa-blend-front-view.png" alt="Moringa Blend front view">
+    <h3>Moringa Blend</h3>
+    <p>A luxurious blend of chocolate and coffee aromas that nourishes and revitalizes skin.</p>
+  </div>
+
+  <div class="product-card fade-left">
+    <img src="images/Super-seven-front-view.png" alt="Super Seven front view">
+    <h3>Super Seven Blend</h3>
+    <p>Sweet strawberry essence with intense hydration for fresh, glowing skin.</p>
+  </div>
+  </div>
+
+</section>
+ <section id="benefits" class="benefits">
   <h2>Why Choose Jani Glow Organics</h2>
   <p class="benefits-intro">
     Our products are crafted using nature-derived ingredients, guided by traditional knowledge
@@ -113,52 +121,56 @@
     </div>
   </div>
 </section>
-    </main>
-    <section id="contact" class="contact-cta">
+</main>
+
+<!-- ===== Contact CTA ===== -->
+<section id="contact" class="contact-cta">
   <div class="contact-container">
     <h2>Get in Touch with Us</h2>
-    <p>Have questions or want to place an order? Reach out to us directly via WhatsApp or follow us on social media.</p>
-    
+    <p>Have questions or want to place an order? Reach out or follow us on social media.</p>
+
     <div class="cta-buttons">
-      <a href="https://www.instagram.com/janigloworganics?igsh=MWlzOTB0Ynh1aTFrMA==" target="_blank" class="cta-btn instagram">
+      <a href="https://instagram.com/yourusername" target="_blank" class="cta-btn instagram">
         <i class="fab fa-instagram"></i> Instagram
       </a>
-      <a href="https://www.facebook.com/share/1BcX1ViGmP/" target="_blank" class="cta-btn facebook">
+      <a href="https://facebook.com/yourpage" target="_blank" class="cta-btn facebook">
         <i class="fab fa-facebook-f"></i> Facebook
       </a>
-      <a href="https://www.tiktok.com/@jani.glow.organic?_r=1&_t=ZM-92UTizB7orL" target="_blank" class="cta-btn tiktok">
+      <a href="https://tiktok.com/@yourusername" target="_blank" class="cta-btn tiktok">
         <i class="fab fa-tiktok"></i> TikTok
       </a>
     </div>
   </div>
 </section>
-<!-- Floating WhatsApp Button -->
+
+<!-- ===== Floating WhatsApp Button ===== -->
 <div class="whatsapp-float">
   <button class="whatsapp-btn" onclick="toggleWhatsAppBubble()">
     <i class="fab fa-whatsapp"></i>
   </button>
 
   <div id="whatsappBubble" class="whatsapp-bubble">
-  <p class="bubble-title">Chat with us on WhatsApp</p>
+    <p class="bubble-title">Chat with us on WhatsApp</p>
 
-  <a
-    href="https://wa.me/254715194165?text=Hello%20👋,%20I'm%20interested%20in%20your%20products."
-    target="_blank"
-    class="whatsapp-option"
-  >
-    🧔 Swahili / English
-  </a>
+    <a
+      href="https://wa.me/254715194165?text=Hello%20%F0%9F%91%8B,%20I'm%20interested%20in%20your%20products."
+      target="_blank"
+      class="whatsapp-option"
+    >
+      🧔 Swahili / English
+    </a>
 
-  <a
-    href="https://wa.me/254720007721?text=Hello%20👋,%20I'm%20interested%20in%20your%20products."
-    target="_blank"
-    class="whatsapp-option"
-  >
-    👩 Somali / English
-  </a>
+    <a
+      href="https://wa.me/254720007721?text=Hello%20%F0%9F%91%8B,%20I'm%20interested%20in%20your%20products."
+      target="_blank"
+      class="whatsapp-option"
+    >
+      👩 Somali / English
+    </a>
+  </div>
 </div>
 
-
+<!-- ===== Scripts ===== -->
 <script>
   function openPanel() {
     document.getElementById("sidePanel").style.width = "250px";
@@ -167,13 +179,32 @@
   function closePanel() {
     document.getElementById("sidePanel").style.width = "0";
   }
-</script>
-<script>
+
   function toggleWhatsAppBubble() {
-    const bubble = document.getElementById("whatsappBubble");
-    bubble.style.display =
-      bubble.style.display === "block" ? "none" : "block";
+    document.getElementById("whatsappBubble").classList.toggle("show");
   }
 </script>
+<script>
+  const faders = document.querySelectorAll('.fade-left, .fade-right');
+
+  const appearOptions = {
+    threshold: 0.2
+  };
+
+  const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+
+      entry.target.classList.add('fade-in');
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
+
 </body>
 </html>
+
