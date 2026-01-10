@@ -323,11 +323,11 @@ main {
 .price {
   font-size: 1.1rem;
   font-weight: 600;
+  color: #ffffff; /* change this to your brand color */
   margin: 10px 0;
 }
-.price p {
-  color: #ffffff;
-}
+
+
 
 
 .buy-btn {
