@@ -329,7 +329,7 @@ main {
 .buy-btn {
   display: inline-block;
   padding: 10px 18px;
-  background: #111;
+  background: #417b07;
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
@@ -338,7 +338,7 @@ main {
 }
 
 .buy-btn:hover {
-  background: #333;
+  background: #8aa528;
   transform: translateY(-1px);
 }
  
