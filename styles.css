@@ -320,12 +320,13 @@ main {
   display: block;
 }
 
-.price {
+.product-card .price {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #ffffff; /* change this to your brand color */
+  color: #ffffff; /* or any color you want */
   margin: 10px 0;
 }
+
 
 
 
