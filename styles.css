@@ -324,8 +324,11 @@ main {
   font-size: 1.1rem;
   font-weight: 600;
   margin: 10px 0;
+}
+.price p {
   color: #ffffff;
 }
+
 
 .buy-btn {
   display: inline-block;
